@@ -44,16 +44,6 @@ main {
     padding: 30px;
 }
 
-/* contenido ppal */
-main>div {
-    /* border: 2px blueviolet solid; */
-    min-height: 180px;
-    margin: 0.5rem;
-    height: auto;
-    float: left;
-    width: 65%;
-}
-
 aside {
     /* border: 2px bisque solid; */
     grid-area: aside;

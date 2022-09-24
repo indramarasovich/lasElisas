@@ -1,0 +1,119 @@
+body {
+    font-size: 1rem;
+    height: 100%;
+    margin: 0px;
+}
+
+.contenedor { 
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 0.25 1.75;
+    grid-template-areas: 
+    "logo nav";
+}
+
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-areas:
+    "carrousel carrousel"
+    "seccion2 aside";
+
+    min-height: 100px;
+    overflow: auto;
+}
+
+.carrousel {
+    grid-area: carrousel;
+}
+
+.seccion2 {
+    grid-area: seccion2;
+    padding: 30px;
+}
+
+/* contenido ppal */
+main>div {
+    /* border: 2px blueviolet solid; */
+    min-height: 180px;
+    margin: 0.5rem;
+    height: auto;
+    float: left;
+    width: 65%;
+}
+
+aside {
+    /* border: 2px bisque solid; */
+    grid-area: aside;
+}
+
+.info-aside {
+    margin-top: 40px;
+    padding: 40px;
+    background-color:antiquewhite;
+}
+
+.seccion2 article {
+   display: flex;
+   padding: 40px;
+}
+
+.contenido {
+    padding: 40px;
+}
+
+/*menu*/
+.header-logo {
+    grid-area: logo;
+    width: auto;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
+
+.header-menubar {
+    grid-area: nav;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.header-menubar li {
+    margin-top: 40px;
+    float: right;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.header-menubar a {
+    text-decoration: none;
+    color: burlywood;
+}
+
+.header-menubar a:hover {
+    color: dimgray;
+}
+
+.header-menubar li a{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+footer {
+    background-color: aliceblue;
+    padding: 50px;
+}

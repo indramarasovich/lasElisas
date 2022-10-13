@@ -12,7 +12,7 @@ body {
     "main"
     "footer";
     background-color: white;
-    font-family: "Montserrat", sans-serif !important;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -42,7 +42,22 @@ header {
 
 .carrousel {
     grid-area: carrousel;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
 }
+
+.carrousel img {
+    width: 100%;
+    height: auto;
+}
+
+@supports(object-fit: cover){
+    .carrousel img{
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
 
 .seccion2 {
     grid-area: seccion2;
@@ -61,12 +76,24 @@ aside {
 
 .seccion2 article {
    display: flex;
-   padding: 40px;
+   padding: 20px;
 }
 
 .contenido {
-    padding: 40px;
+    padding: 20px;
     text-align: justify;
+}
+
+.titulo-p {
+    margin-top: -55px;
+}
+
+.titulo-seccion {
+    font-family: 'Inspiration', cursive;
+    color: burlywood;
+    font-size: 50px;
+    font-weight: 100;
+    
 }
 
 .color {

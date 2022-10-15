@@ -1,0 +1,97 @@
+.container-portada {
+    width: 100%;
+    /* margin: auto; */
+    overflow: hidden;
+    position: relative;
+}
+
+
+.main3 {
+    grid-area: main;
+    padding: 30px;
+    margin-right: 80px;
+    margin-left: 80px;
+    text-align: justify;
+}
+
+.seccion-texto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.seccion-video {
+    text-align: center;
+}
+
+.seccion-video iframe{
+    width: 50%;
+    margin: auto;
+    height: 400px;
+}
+
+.seccion-ayd {
+    grid-area: main;
+    display: grid;
+   
+    grid-template-columns: 1fr 1fr;
+
+    padding: 0px 60px;
+    text-align: center;
+    
+}
+
+.p-ayd p {
+    padding: 0px 40px;
+    text-align: justify;
+}
+
+
+ .centrar {
+    text-align: center;
+    padding-top: 20px;
+ }
+
+ .color4 {
+    /* color: burlywood; */
+    color:rgb(12, 12, 12);
+    font-family: 'Inspiration', cursive;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 50;
+}
+
+.titulo-seccionTutoriales {
+    font-family: 'Inspiration', cursive;
+    color: rgb(231, 111, 195);
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.titulo-seccionAntes {
+    font-family: 'Inspiration', cursive;
+    color: rgb(118, 146, 179);
+    font-size: 50px;
+    font-weight: 100;
+    line-height: 0px;
+}
+
+
+.titulo-seccionDespues {
+    font-family: 'Inspiration', cursive;
+    color: rgb(173, 136, 167);
+    font-size: 50px;
+    font-weight: 100;
+    line-height: 0px;
+}
+
+.colorT {
+    font-size: 17px;
+    color: rgb(173, 136, 167);
+}
+
+/* .titulo-seccion {
+    font-family: 'Inspiration', cursive;
+    color: burlywood;
+    font-size: 50px;
+    font-weight: 100;
+ */

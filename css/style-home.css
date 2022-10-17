@@ -19,6 +19,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/*header*/
 header {
     grid-area: header;
     display: grid;
@@ -27,12 +28,50 @@ header {
     "logo nav";
 }
 
+.header-logo {
+    grid-area: logo;
+    margin: auto;
+    text-align: center;
+}
+
+/*nav*/
+.header-menubar {
+    grid-area: nav;
+}
+
+ul {
+    text-align: right;
+    list-style: none;
+}
+
+.header-menubar li {
+    margin-top: 40px;
+    display: inline-block;
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-menubar a {
+    text-decoration: none;
+    color: burlywood;
+}
+
+.header-menubar a:hover {
+    color: dimgray;
+}
+
+.header-menubar li a{
+    font-size: 20px;
+    font-weight: 700;
+}
+
 .main1 {
     grid-area: main;
     display: grid;
     grid-template-columns: 1.5fr 0.5fr;
     grid-template-areas:
-    "seccion2 aside";
+    "seccion1 aside";
 
     min-height: 100px;
     overflow: auto;
@@ -42,6 +81,7 @@ header {
     grid-area: main;
 }
 
+/*carrousel*/
 .container-slider {
     width: 100%;
     margin: auto;
@@ -95,9 +135,13 @@ header {
     left: 10px;
 }
 
-.seccion2 {
-    grid-area: seccion2;
+.seccion1 {
+    grid-area: seccion1;
     padding: 30px;
+}
+
+.seccion1 img {
+    width: 400px;
 }
 
 aside {
@@ -110,7 +154,7 @@ aside {
     background-color:antiquewhite;
 }
 
-.seccion2 article {
+.seccion1 article {
    display: flex;
    padding: 20px;
 }
@@ -138,42 +182,6 @@ aside {
 }
 
 /*menu*/
-.header-logo {
-    grid-area: logo;
-    margin: auto;
-    text-align: center;
-}
-
-
-.header-menubar {
-    grid-area: nav;
-}
-
-ul {
-    text-align: right;
-    list-style: none;
-}
-
-.header-menubar li {
-    margin-top: 40px;
-    display: inline-block;
-    text-align: center;
-    padding: 1rem;
-}
-
-.header-menubar a {
-    text-decoration: none;
-    color: burlywood;
-}
-
-.header-menubar a:hover {
-    color: dimgray;
-}
-
-.header-menubar li a{
-    font-size: 20px;
-    font-weight: 700;
-}
 
 .formulario {
     text-align: center;

@@ -200,13 +200,14 @@ aside {
 }
 
 .seccion-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 0.5fr;
 
-  background-color:#26272b;
-  padding: 50px;
-  font-size: 15px;
-  color: #737373;
+    background-color:#26272b;
+    padding: 40px;
+    margin-top: 40px;
+    font-size: 15px;
+    color: #737373;
 }
 
 .seccion-footer div {

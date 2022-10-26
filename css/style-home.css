@@ -45,16 +45,11 @@ ul {
 }
 
 .header-menubar li {
-    margin-top: 40px;
+    margin-top: 30px;
     display: inline-block;
     text-align: center;
     padding: 1rem;
     font-family: 'Montserrat', sans-serif;
-}
-
-.header-menubar a {
-    text-decoration: none;
-    color: burlywood;
 }
 
 .header-menubar a:hover {
@@ -64,6 +59,8 @@ ul {
 .header-menubar li a{
     font-size: 20px;
     font-weight: 700;
+    text-decoration: none;
+    color: burlywood;
 }
 
 .main1 {
@@ -250,4 +247,120 @@ aside {
 {
   color:#fff;
   background-color:#29aafe
+}
+
+
+
+/************/
+.contenedor-nav {
+    place-content: flex-start;
+}
+
+.nav-img {
+    grid-area: logo;
+}
+
+.contenedor-nav nav {
+    width: 70%;
+    display: flex;
+    place-content: space-between;
+}
+
+#menu, #menu-check {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .contenedor-nav, .contenedor-nav ul, .contenedor-nav ul li {
+        display: inline;
+    }
+    .contenedor-nav nav {
+        width: 100%;
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .nav-img{
+        margin: 1em;
+    }
+
+    .nav-img a{
+        padding: 0;
+    }
+
+    .contenedor-nav{
+        display: flex;
+        place-content: space-between;
+    }
+
+    #menu-check:not(:checked) ~ nav {
+        display: none;
+    }
+
+    #menu-check:checked ~ nav {
+        display: block;
+    }
+
+    #menu {
+        display: block;
+        color: #29aafe;
+        background-color: white;
+        font-size: 1.5em;
+        font-weight: bold;
+        border: 1px solid #29aafe;
+        border-radius: 0.3em;
+        position: absolute;
+        right: 0.5em;
+        top: 0.5em;
+        z-index: 9999;
+        padding: 0.3em 0.6em;
+    }
+
+    #menu:hover {
+        color: white;
+        background-color: #29aafe;
+    }
+
+    #menu-cerrar {
+        display: none;
+
+    }
+
+    #menu-check:checked ~ label #menu-abrir {
+        display: none;
+    }
+
+    #menu-check:checked ~ label #menu-cerrar {
+        display: block;
+    }
+
+    .contenedor-nav nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background-color: #818a91;
+        padding-top: 0.5em;
+        padding-right: 4em;
+        opacity: 0.8;
+        color: #fff;
+    }
+
+    .contenedor-nav nav ul a {
+        color: #fff;
+        background: none;
+    }
+
+    .contenedor-nav nav ul, .contenedor-nav ul li{
+        display: block;
+        margin: 0;
+        padding: 0.5em;
+        text-align: right;
+    }
+
+    main {
+        text-align: center;
+    }
+
 }

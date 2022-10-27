@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Las Elisas - Arte en Muebles</title>
+    <title>Las Elisas - Tutoriales</title>
 
     <link rel="stylesheet" href='https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap'>
     <link rel="stylesheet" href='https://fonts.googleapis.com/css2?family=Cinzel&display=swap'>
@@ -14,22 +14,34 @@
     <link rel="stylesheet" href="../css/style-paginas.css">
 
     <script src="https://kit.fontawesome.com/fb3b37bc2b.js" crossorigin="anonymous"></script>
+    <style>
+      #link { color: #ffffff; text-decoration: none; line-height: 30px;}
+    </style>
 </head>
 <body>
   <div class="contenedor">
-      <header>
-          <div class="header-logo">
+    <header>
+      <div class="contenedor-nav">
+          <div class="nav-img">
               <a href="../index.html"><img width="100px" src="../img/logo.png"></a>
           </div>
+
+          <input type="checkbox" id="menu-check">
+          <label id="menu" for="menu-check">
+              <span id="menu-abrir">&#9776;</span>
+              <span id="menu-cerrar">X</span>
+          </label>
+
           <nav class="header-menubar">
-                  <ul>
-                      <li><a href="../index.html">HOME</a></li>
-                      <li><a href="ayd.html">ANTES Y DESPUÉS</a></li>
-                      <li><a href="tutoriales.html">TUTORIALES</a></li>
-                      <li><a href="contacto.html">CONTACTO</a></li>
-                  </ul>
+              <ul>
+                  <li><a href="../index.html">HOME</a></li>
+                  <li><a href="ayd.html">ANTES Y DESPUÉS</a></li>
+                  <li><a href="tutoriales.html">TUTORIALES</a></li>
+                  <li><a href="contacto.html">CONTACTO</a></li>
+              </ul>
           </nav>
-      </header>
+      </div>
+    </header>
     <main>
         <seccion class="container-portada">
           <img width="100%" src="../img/portada-tutoriales.jpg" alt="">
@@ -38,7 +50,6 @@
           <h3 class="titulo-seccionTutoriales">Tutoriales</h3>
           <div class="seccion-texto">
               <div>
-                  
                   <h4>COMO ENCERAR TUS MUEBLES DE MANERA MAS SENCILLA</h4>
                   <p>Una de las terminaciones que podemos dar a nuestros muebles de madera es con cera, le da un acabado natural y no cambia el color de la madera, y le aporta un aroma hermoso y disfrutable con un brillo apenas satinado
                   </p>
@@ -71,26 +82,26 @@
       </main>
       <footer class="seccion-footer">
         <div>
-          <h6>Sobre LAS ELISAS</h6>
-          <p>Somos un grupo de emprendedoras que decidimos poner nuestra pasión y conocimientos por la restauración y el reciclado, para dar valor a esos muebles que forman parte de nuestra historia, ya sea familiar o que  adquirimos  pensando en la calidad con las que fueron realizados, maderas nobles, estilos de ebanistas reconocidos que marcan una época.</p>
+            <h6>Sobre LAS ELISAS</h6>
+            <p>Somos un grupo de emprendedoras que decidimos poner nuestra pasión y conocimientos por la restauración y el reciclado, para dar valor a esos muebles que forman parte de nuestra historia, ya sea familiar o que  adquirimos  pensando en la calidad con las que fueron realizados, maderas nobles, estilos de ebanistas reconocidos que marcan una época.</p>
         </div>
 
         <div>
-          <h6>Links rapidos</h6>
-          <ul class="links-footer">
-            <li><a href="http://scanfcode.com/about/">About Us</a></li>
-            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
-          </ul>
+            <h6>Links rapidos</h6>
+            <ul class="links-footer">
+                <li><a id="link" href="../index.html">HOME</a></li>
+                <li><a id="link" href="ayd.html">ANTES Y DESPUÉS</a></li>
+                <li><a id="link" href="tutoriales.html">TUTORIALES</a></li>
+                <li><a id="link" href="contacto.html">CONTACTO</a></li>
+            </ul>
         </div>
 
         <div>
-          <h6>Redes sociales</h6>
-          <ul class="redes-iconos">
-            <li><a class="facebook" target="_blank" href="https://www.facebook.com/laselisasarteenmuebles"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="instagram" target="_blank" href="https://www.instagram.com/laselisas.arteenmuebles/"><i class="fa fa-instagram"></i></a></li>
+            <h6>Redes sociales</h6>
+            <ul class="redes-iconos">
+                <li><a class="facebook" target="_blank" href="https://www.facebook.com/laselisasarteenmuebles"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="instagram" target="_blank" href="https://www.instagram.com/laselisas.arteenmuebles/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
         </div>
       </footer>
   </div>

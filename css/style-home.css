@@ -101,11 +101,11 @@ ul {
 
     #menu {
         display: block;
-        color: #29aafe;
+        color: #aa727b;
         background-color: white;
         font-size: 1.5em;
         font-weight: bold;
-        border: 1px solid #29aafe;
+        border: 1px solid #aa727b;
         border-radius: 0.3em;
         position: absolute;
         right: 0.5em;
@@ -116,12 +116,11 @@ ul {
 
     #menu:hover {
         color: white;
-        background-color: #29aafe;
+        background-color: #aa727b;
     }
-
+    
     #menu-cerrar {
         display: none;
-
     }
 
     #menu-check:checked ~ label #menu-abrir {
@@ -280,7 +279,8 @@ ul {
 
 .color {
     font-size: 17px;
-    color: rgb(78, 72, 78);
+    color: rgb(199, 74, 101) !important;
+    font-weight: 100%;
 }
 
 /*aside*/
@@ -332,10 +332,6 @@ aside {
         background-color:antiquewhite;
     }
 }
-
-
-
-
 
 /*form*/
 .formulario {
